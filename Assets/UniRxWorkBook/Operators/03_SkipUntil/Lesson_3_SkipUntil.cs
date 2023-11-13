@@ -9,12 +9,12 @@ namespace UniRxWorkBook.Operators
     {
         private void Start()
         {
-            //マウスのクリックストリーム
+            //마우스 클릭 스트림
             var clickStream = this.UpdateAsObservable().Where(_ => Input.GetMouseButtonDown(0));
-
-            // _____()の部分を正しい形に置換して、マウスのクリックが1度でも来たら回転が始まるようにしよう
+            
+            //_____() 부분을 올바른 형식으로 대체하여, 마우스 클릭이 한 번이라도 발생하면 회전이 시작되도록 만들어보세요.
             this.UpdateAsObservable()
-                ._____()
+                .SkipUntil(clickStream)
                 .Subscribe(_ => RotateCube());
         }
 

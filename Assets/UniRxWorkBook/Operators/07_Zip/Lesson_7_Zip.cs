@@ -19,11 +19,13 @@ namespace UniRxWorkBook.Operators
             var rightStream = buttonRight.OnClickAsObservable();
             var leftStream = buttonLeft.OnClickAsObservable();
 
-            // _____を書き換え、LeftとRightが両方共最低１回ずつ押された時にTextが書き換わるようにしてみよう
+            // _____를 수정하여, Left와 Right 버튼이 각각 최소한 1회씩 눌렸을 때에만 Text가 변경되도록 만들어보세요.
             leftStream
-                ._____()
-                .First()
+                .Zip(rightStream, (l, r) => new { l, r })
                 .SubscribeToText(resultLabel, _ => "OK");
+
+            // Observable.Zip(leftStream, rightStream)
+            //           .SubscribeToText(resultLabel, _ => "OK");
         }
 
     }

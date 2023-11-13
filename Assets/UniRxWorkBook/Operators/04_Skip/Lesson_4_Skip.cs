@@ -9,12 +9,12 @@ namespace UniRxWorkBook.Operators
     {
         private void Start()
         {
-            // _____()の部分を正しい形に置換して、マウスが3回クリックされたらCubeが回転するようにしよう
+            // _____() 부분을 올바른 형식으로 대체하여, 마우스가 3번 클릭되면 Cube가 회전하도록 만들어보세요.
             var clickStream = this.UpdateAsObservable()
                 .Where(_ => Input.GetMouseButtonDown(0));
 
             this.UpdateAsObservable()
-                .SkipUntil(clickStream._____())
+                .SkipUntil(clickStream.Skip(2))
                 .Subscribe(_ => RotateCube());
         }
 

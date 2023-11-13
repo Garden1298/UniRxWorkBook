@@ -24,9 +24,9 @@ namespace UniRxWorkBook.Operators
             var bStream = buttonB.OnClickAsObservable().Select(_ => "B");
             var cStream = buttonC.OnClickAsObservable().Select(_ => "C");
 
-            // _____を書き換え、最初の１回目が押された時のみTextが書き換わるようにしよう
+            // _____를 수정하여, 처음 1회 눌릴 때만 Text가 변경되도록 만들어보세요.
             Observable.Merge(aStream, bStream, cStream)
-                ._____()
+                .First()
                 .SubscribeToText(resultLabel);
         }
 
