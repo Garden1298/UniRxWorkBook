@@ -1,12 +1,12 @@
-##UniRx–â‘èW
+##UniRxë½¦ë¬‹ë¢œ
 
-ŠeScript‚Ì____‚ð‘‚«Š·‚¦A³‚µ‚­“®‚­‚æ‚¤‚É‚µ‚Ä‚Ý‚æ‚¤B  
-UniRx‚Í“¯«‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB  
+ë‘«Scriptê¶»____ê·©ë£•ê¶–ë“‚ê¶‘ê°‚ë§«ê¶¢ê¶˜ë²ê¶˜ê·ê¶Žê¶¸ê¶¢ê¶²ê·’ê·ê¶Žê°ƒ  
+UniRxê¶¼ë²ëœªê¶ ê·¢ê¶²ê¶‹ê·ê¶§ê·ªê°ƒ  
 
 
-MITƒ‰ƒCƒZƒ“ƒX‚ÅŒöŠJ‚µ‚Ü‚·B  
+MITê¹‹ê·½ê¸œê¹›ê¸šê¶³ëšºë‘Žê¶¢ê·ê¶¥ê°ƒ  
 
-##Žg—pƒ‰ƒCƒZƒ“ƒX
-UniRx–â‘èW‚ÍUniRx‚ðŽg—p‚µ‚Ä‚¢‚Ü‚·
+##ëŸŠë¾­ê¹‹ê·½ê¸œê¹›ê¸š
+UniRxë½¦ë¬‹ë¢œê¶¼UniRxê·©ëŸŠë¾­ê¶¢ê¶²ê¶‹ê·ê¶¥
   
 Copyright (c) 2014 Yoshifumi Kawai https://github.com/neuecc/UniRx/blob/master/LICENSE
