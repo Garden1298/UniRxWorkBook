@@ -12,7 +12,7 @@ namespace UniRxWorkBook
         private void Start()
         {
             var controller = GetComponent<CharacterController>();
-            //クリックまたはスペースキーでジャンプ
+            //클릭 또는 스페이스 키로 점프
             this.UpdateAsObservable()
                 .Where(_ => controller.isGrounded && (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)))
                 .Subscribe(_ =>

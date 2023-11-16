@@ -16,14 +16,15 @@ namespace UniRxWorkBook.Operators
 
         private void Start()
         {
-            // ____を書き換え、OFFのボタンを押したら回転が止まるようにしよう
+            // ____를 수정하여, OFF 버튼을 누르면 회전이 멈추도록 만들어보겠습니다
 
             var onStream = onButton.OnClickAsObservable();
             var offStream = offButton.OnClickAsObservable();
+            
 
             this.UpdateAsObservable()
                 .SkipUntil(onStream)
-                ._____()
+                .TakeUntil(offStream)
                 .RepeatUntilDestroy(gameObject)
                 .Subscribe(_ => RotateCube());
 
